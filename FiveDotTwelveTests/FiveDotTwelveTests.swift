@@ -8,6 +8,8 @@
 
 import XCTest
 @testable import FiveDotTwelve
+import Nimble
+import Quick
 
 class FiveDotTwelveTests: XCTestCase {
 

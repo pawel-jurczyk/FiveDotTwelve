@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWT-Mi-UZe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="1HF-a8-cYD">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="HWT-Mi-UZe" customClass="ProfileViewController" customModule="FiveDotTwelve" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nxn-Sw-ZyI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ho8-a0-2Mg">
+                                <rect key="frame" x="0.0" y="-2" width="414" height="898"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lDC-ge-7Mm">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9PM-qX-nCR">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZPG-o2-3H0">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-Cl-70L">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ho8-a0-2Mg" firstAttribute="top" secondItem="Nxn-Sw-ZyI" secondAttribute="top" constant="-2" id="0L9-LM-HDb"/>
+                            <constraint firstItem="BNb-Cl-70L" firstAttribute="centerY" secondItem="Nxn-Sw-ZyI" secondAttribute="centerY" id="AMH-Nk-3Ox"/>
+                            <constraint firstAttribute="bottom" secondItem="ho8-a0-2Mg" secondAttribute="bottom" id="MZv-b0-mhw"/>
+                            <constraint firstItem="ho8-a0-2Mg" firstAttribute="trailing" secondItem="9T9-rw-Ekc" secondAttribute="trailing" id="YJ0-8A-cfO"/>
+                            <constraint firstItem="BNb-Cl-70L" firstAttribute="centerX" secondItem="9T9-rw-Ekc" secondAttribute="centerX" id="fGL-e1-c3e"/>
+                            <constraint firstItem="ho8-a0-2Mg" firstAttribute="leading" secondItem="9T9-rw-Ekc" secondAttribute="leading" id="h5y-a8-g8v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9T9-rw-Ekc"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="BNb-Cl-70L" id="ebA-Db-GD2"/>
+                        <outlet property="collectionView" destination="ho8-a0-2Mg" id="a39-fo-1gQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNW-e5-sYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.21739130434784" y="-286.60714285714283"/>
+        </scene>
+    </scenes>
+</document>

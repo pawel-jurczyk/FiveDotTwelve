@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  PhotoCollectionViewCell.swift
 //  FiveDotTwelve
 //
 //  Created by Pawel on 25/02/2020.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-@UIApplicationMain
-
-class AppDelegate: UIResponder, UIApplicationDelegate { }
+class PhotoCollectionViewCell: UICollectionViewCell {
+    
+}
