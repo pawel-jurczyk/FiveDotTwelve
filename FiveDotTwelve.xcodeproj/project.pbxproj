@@ -14,6 +14,9 @@
 		E5A7A2B524058F5D0090A41C /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A7A2B424058F5D0090A41C /* PhotoCollectionViewCell.xib */; };
 		E5A7A2B724058F6B0090A41C /* ProfileInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A7A2B624058F6B0090A41C /* ProfileInfoCollectionViewCell.xib */; };
 		E5A7A2B924058F760090A41C /* SegmentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A7A2B824058F760090A41C /* SegmentsCollectionViewCell.xib */; };
+		E5A7A2C22406DF9F0090A41C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2C12406DF9F0090A41C /* Color.swift */; };
+		E5A7A2C42406E6600090A41C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2C32406E6600090A41C /* ProfileViewModel.swift */; };
+		E5A7A2C62406F3C90090A41C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2C52406F3C90090A41C /* String+Extension.swift */; };
 		E5EA64F7240573E700BA7D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA64F6240573E700BA7D25 /* AppDelegate.swift */; };
 		E5EA64F9240573E700BA7D25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA64F8240573E700BA7D25 /* SceneDelegate.swift */; };
 		E5EA64FE240573E700BA7D25 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA64FC240573E700BA7D25 /* Profile.storyboard */; };
@@ -52,6 +55,9 @@
 		E5A7A2B424058F5D0090A41C /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		E5A7A2B624058F6B0090A41C /* ProfileInfoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoCollectionViewCell.xib; sourceTree = "<group>"; };
 		E5A7A2B824058F760090A41C /* SegmentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentsCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5A7A2C12406DF9F0090A41C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E5A7A2C32406E6600090A41C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E5A7A2C52406F3C90090A41C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E5EA64F3240573E700BA7D25 /* FiveDotTwelve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveDotTwelve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA64F6240573E700BA7D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA64F8240573E700BA7D25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 				E5EA64FF240573EA00BA7D25 /* Assets.xcassets */,
 				E5EA6501240573EA00BA7D25 /* LaunchScreen.storyboard */,
 				E5EA6504240573EA00BA7D25 /* Info.plist */,
+				E5A7A2C12406DF9F0090A41C /* Color.swift */,
+				E5A7A2C52406F3C90090A41C /* String+Extension.swift */,
 				E5EA654424057F0600BA7D25 /* Model */,
 				E5EA654324057F0000BA7D25 /* Actions */,
 				E5EA654224057EF800BA7D25 /* Presenter */,
@@ -210,6 +218,7 @@
 				E5EA652B24057B1500BA7D25 /* Profile.swift */,
 				E5EA652D24057B2800BA7D25 /* ProfileResponse.swift */,
 				E5EA6548240581C800BA7D25 /* ProfileError.swift */,
+				E5A7A2C32406E6600090A41C /* ProfileViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,13 +344,16 @@
 				E5EA653724057BA800BA7D25 /* ProfileWorker.swift in Sources */,
 				E5EA652C24057B1500BA7D25 /* Profile.swift in Sources */,
 				E5A7A2AD24058D220090A41C /* ProfileCollectionViewDataSource.swift in Sources */,
+				E5A7A2C22406DF9F0090A41C /* Color.swift in Sources */,
 				E5EA64F7240573E700BA7D25 /* AppDelegate.swift in Sources */,
 				E5EA653624057BA800BA7D25 /* ProfilePresenter.swift in Sources */,
 				E5EA653C24057BCF00BA7D25 /* ProfileViewController.swift in Sources */,
 				E5EA652E24057B2800BA7D25 /* ProfileResponse.swift in Sources */,
+				E5A7A2C62406F3C90090A41C /* String+Extension.swift in Sources */,
 				E5EA64F9240573E700BA7D25 /* SceneDelegate.swift in Sources */,
 				E5A7A2B324058DF20090A41C /* PhotoCollectionViewCell.swift in Sources */,
 				E5A7A2AF24058DD20090A41C /* SegmentsCollectionViewCell.swift in Sources */,
+				E5A7A2C42406E6600090A41C /* ProfileViewModel.swift in Sources */,
 				E5EA653524057BA800BA7D25 /* ProfileActions.swift in Sources */,
 				E5EA653A24057BA800BA7D25 /* ProfileInteractor.swift in Sources */,
 				E5EA6549240581C800BA7D25 /* ProfileError.swift in Sources */,

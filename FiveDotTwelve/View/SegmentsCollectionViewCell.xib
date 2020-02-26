@@ -21,13 +21,13 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-dx-OtH">
                                 <rect key="frame" x="0.0" y="0.0" width="286" height="178"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-x6-yCV">
                                 <rect key="frame" x="286" y="0.0" width="286" height="178"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -45,6 +45,10 @@
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="572" height="178"/>
+            <connections>
+                <outlet property="photosLabel" destination="fFo-x6-yCV" id="1Sp-6V-Nnm"/>
+                <outlet property="postsLabel" destination="xbh-dx-OtH" id="paY-bu-2zp"/>
+            </connections>
             <point key="canvasLocation" x="215.94202898550725" y="144.64285714285714"/>
         </collectionViewCell>
     </objects>

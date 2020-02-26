@@ -17,12 +17,12 @@ protocol ProfileViewControllerProtocol: AnyObject {
 final class ProfileViewController: UIViewController {
     var interactor: ProfileInteractorProtocol?
     
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private var collectionView: UICollectionView! {
         didSet {
             configureCollectionView()
         }
     }
-    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
     let dataSource = ProfileCollectionViewDataSource()
     
     override func viewDidLoad() {
@@ -30,7 +30,11 @@ final class ProfileViewController: UIViewController {
         interactor?.viewDidLoad()
         registerCells()
         view.insetsLayoutMarginsFromSafeArea = false
-//        collectionView.contentOffset = .init(x: 0, y: -view.safeAreaInsets.top)
+        modalPresentationCapturesStatusBarAppearance = false
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     private func registerCells() {
@@ -45,7 +49,12 @@ final class ProfileViewController: UIViewController {
     private func configureCollectionView() {
         collectionView.dataSource = dataSource
         collectionView.delegate = self
+        collectionView.refreshControl = UIRefreshControl()
+        collectionView.refreshControl?.addTarget(interactor, action: #selector(ProfileInteractor.viewDidLoad), for: .valueChanged)
         let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.minimumLineSpacing = 0
+        flowLayout.sectionInset = .zero
         collectionView.collectionViewLayout = flowLayout
         collectionView.insetsLayoutMarginsFromSafeArea = false
     }
@@ -53,6 +62,7 @@ final class ProfileViewController: UIViewController {
 
 extension ProfileViewController: ProfileViewControllerProtocol {
     func presentUserProfile(_ profile: Profile) {
+        collectionView.refreshControl?.endRefreshing()
         dataSource.profile = profile
         collectionView.reloadData()
     }

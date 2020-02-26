@@ -26,7 +26,7 @@ final class ProfileInteractor: ProfileDataStore {
 }
 
 extension ProfileInteractor: ProfileInteractorProtocol {
-    func viewDidLoad() {
+    @objc func viewDidLoad() {
         presenter?.didStartNetworkRequest()
         worker.downloadUserProfile { [weak self] result in
             switch result {

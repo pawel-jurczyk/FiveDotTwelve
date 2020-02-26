@@ -30,16 +30,24 @@ class ProfileCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ProfileInfoCollectionViewCell.self),
-                                                      for: indexPath)
-            guard let profileCell = cell as? ProfileInfoCollectionViewCell else { return cell }
-            profileCell.profile = profile
+                                                          for: indexPath)
+            guard let profileCell = cell as? ProfileInfoCollectionViewCell,
+                let profile = profile else {
+                    return cell
+            }
+            profileCell.profile = ProfileViewModel(profile: profile)
             return profileCell
         case 1:
             return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: SegmentsCollectionViewCell.self),
                                                       for: indexPath)
         case 2:
-            return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotoCollectionViewCell.self),
-                                                      for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotoCollectionViewCell.self),
+                                                          for: indexPath)
+            guard let photoCell = cell as? PhotoCollectionViewCell else {
+                return cell
+            }
+            photoCell.imageURL = self.profile?.photosURLs[indexPath.row]
+            return photoCell
         default:
             return UICollectionViewCell()
         }
