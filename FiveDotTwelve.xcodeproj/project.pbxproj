@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50B73A924080EE5008F1215 /* ProfileViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B73A824080EE5008F1215 /* ProfileViewModelSpec.swift */; };
 		E5A7A2AD24058D220090A41C /* ProfileCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2AC24058D220090A41C /* ProfileCollectionViewDataSource.swift */; };
 		E5A7A2AF24058DD20090A41C /* SegmentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2AE24058DD20090A41C /* SegmentsCollectionViewCell.swift */; };
 		E5A7A2B124058DE40090A41C /* ProfileInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2B024058DE40090A41C /* ProfileInfoCollectionViewCell.swift */; };
@@ -22,12 +23,11 @@
 		E5EA64FE240573E700BA7D25 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA64FC240573E700BA7D25 /* Profile.storyboard */; };
 		E5EA6500240573EA00BA7D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EA64FF240573EA00BA7D25 /* Assets.xcassets */; };
 		E5EA6503240573EA00BA7D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA6501240573EA00BA7D25 /* LaunchScreen.storyboard */; };
-		E5EA650E240573EA00BA7D25 /* FiveDotTwelveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA650D240573EA00BA7D25 /* FiveDotTwelveTests.swift */; };
+		E5EA650E240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift */; };
 		E5EA651D2405750A00BA7D25 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E5EA651C2405750A00BA7D25 /* Quick */; };
 		E5EA652A2405766800BA7D25 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E5EA65292405766800BA7D25 /* Nimble */; };
 		E5EA652C24057B1500BA7D25 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA652B24057B1500BA7D25 /* Profile.swift */; };
 		E5EA652E24057B2800BA7D25 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA652D24057B2800BA7D25 /* ProfileResponse.swift */; };
-		E5EA653524057BA800BA7D25 /* ProfileActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA652F24057BA800BA7D25 /* ProfileActions.swift */; };
 		E5EA653624057BA800BA7D25 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA653024057BA800BA7D25 /* ProfilePresenter.swift */; };
 		E5EA653724057BA800BA7D25 /* ProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA653124057BA800BA7D25 /* ProfileWorker.swift */; };
 		E5EA653924057BA800BA7D25 /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA653324057BA800BA7D25 /* ProfileBuilder.swift */; };
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E50B73A824080EE5008F1215 /* ProfileViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelSpec.swift; sourceTree = "<group>"; };
 		E5A7A2AC24058D220090A41C /* ProfileCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		E5A7A2AE24058DD20090A41C /* SegmentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5A7A2B024058DE40090A41C /* ProfileInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -66,11 +67,10 @@
 		E5EA6502240573EA00BA7D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5EA6504240573EA00BA7D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EA6509240573EA00BA7D25 /* FiveDotTwelveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveDotTwelveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5EA650D240573EA00BA7D25 /* FiveDotTwelveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDotTwelveTests.swift; sourceTree = "<group>"; };
+		E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewDataSourceTests.swift; sourceTree = "<group>"; };
 		E5EA650F240573EA00BA7D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EA652B24057B1500BA7D25 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E5EA652D24057B2800BA7D25 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
-		E5EA652F24057BA800BA7D25 /* ProfileActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActions.swift; sourceTree = "<group>"; };
 		E5EA653024057BA800BA7D25 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		E5EA653124057BA800BA7D25 /* ProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWorker.swift; sourceTree = "<group>"; };
 		E5EA653324057BA800BA7D25 /* ProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
@@ -100,6 +100,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E50B73A624080837008F1215 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A2C12406DF9F0090A41C /* Color.swift */,
+				E5A7A2C52406F3C90090A41C /* String+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E50B73A724080E00008F1215 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A2AE24058DD20090A41C /* SegmentsCollectionViewCell.swift */,
+				E5A7A2B824058F760090A41C /* SegmentsCollectionViewCell.xib */,
+				E5A7A2B024058DE40090A41C /* ProfileInfoCollectionViewCell.swift */,
+				E5A7A2B624058F6B0090A41C /* ProfileInfoCollectionViewCell.xib */,
+				E5A7A2B224058DF20090A41C /* PhotoCollectionViewCell.swift */,
+				E5A7A2B424058F5D0090A41C /* PhotoCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		E5EA64EA240573E700BA7D25 = {
 			isa = PBXGroup;
 			children = (
@@ -128,10 +150,8 @@
 				E5EA64FF240573EA00BA7D25 /* Assets.xcassets */,
 				E5EA6501240573EA00BA7D25 /* LaunchScreen.storyboard */,
 				E5EA6504240573EA00BA7D25 /* Info.plist */,
-				E5A7A2C12406DF9F0090A41C /* Color.swift */,
-				E5A7A2C52406F3C90090A41C /* String+Extension.swift */,
+				E50B73A624080837008F1215 /* Common */,
 				E5EA654424057F0600BA7D25 /* Model */,
-				E5EA654324057F0000BA7D25 /* Actions */,
 				E5EA654224057EF800BA7D25 /* Presenter */,
 				E5EA654124057EF100BA7D25 /* Worker */,
 				E5EA654024057ED400BA7D25 /* View */,
@@ -144,7 +164,8 @@
 		E5EA650C240573EA00BA7D25 /* FiveDotTwelveTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5EA650D240573EA00BA7D25 /* FiveDotTwelveTests.swift */,
+				E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift */,
+				E50B73A824080EE5008F1215 /* ProfileViewModelSpec.swift */,
 				E5EA650F240573EA00BA7D25 /* Info.plist */,
 			);
 			path = FiveDotTwelveTests;
@@ -178,12 +199,7 @@
 			children = (
 				E5EA653B24057BCF00BA7D25 /* ProfileViewController.swift */,
 				E5A7A2AC24058D220090A41C /* ProfileCollectionViewDataSource.swift */,
-				E5A7A2AE24058DD20090A41C /* SegmentsCollectionViewCell.swift */,
-				E5A7A2B824058F760090A41C /* SegmentsCollectionViewCell.xib */,
-				E5A7A2B024058DE40090A41C /* ProfileInfoCollectionViewCell.swift */,
-				E5A7A2B624058F6B0090A41C /* ProfileInfoCollectionViewCell.xib */,
-				E5A7A2B224058DF20090A41C /* PhotoCollectionViewCell.swift */,
-				E5A7A2B424058F5D0090A41C /* PhotoCollectionViewCell.xib */,
+				E50B73A724080E00008F1215 /* CollectionViewCells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,14 +218,6 @@
 				E5EA653024057BA800BA7D25 /* ProfilePresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		E5EA654324057F0000BA7D25 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				E5EA652F24057BA800BA7D25 /* ProfileActions.swift */,
-			);
-			path = Actions;
 			sourceTree = "<group>";
 		};
 		E5EA654424057F0600BA7D25 /* Model */ = {
@@ -354,7 +362,6 @@
 				E5A7A2B324058DF20090A41C /* PhotoCollectionViewCell.swift in Sources */,
 				E5A7A2AF24058DD20090A41C /* SegmentsCollectionViewCell.swift in Sources */,
 				E5A7A2C42406E6600090A41C /* ProfileViewModel.swift in Sources */,
-				E5EA653524057BA800BA7D25 /* ProfileActions.swift in Sources */,
 				E5EA653A24057BA800BA7D25 /* ProfileInteractor.swift in Sources */,
 				E5EA6549240581C800BA7D25 /* ProfileError.swift in Sources */,
 			);
@@ -364,7 +371,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5EA650E240573EA00BA7D25 /* FiveDotTwelveTests.swift in Sources */,
+				E50B73A924080EE5008F1215 /* ProfileViewModelSpec.swift in Sources */,
+				E5EA650E240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +440,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -492,6 +501,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

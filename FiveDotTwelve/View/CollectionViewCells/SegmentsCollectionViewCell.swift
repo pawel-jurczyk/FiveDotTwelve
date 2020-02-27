@@ -23,6 +23,6 @@ class SegmentsCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = UIColor.init(named: "SegmentBackground")
+        backgroundColor = Color.segmentBackground
     }
 }

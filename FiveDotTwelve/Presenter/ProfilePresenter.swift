@@ -32,6 +32,13 @@ extension ProfilePresenter: ProfilePresenterProtocol {
     func presentError(_ profile: ProfileError) {
         DispatchQueue.main.async {
             self.viewController?.hideLoader()
+            switch profile {
+            case .parsingError:
+                self.viewController?.showError(message: "Server error, please try again later")
+            case .networkError:
+                self.viewController?.showError(message: "Network error, please check your connection")
+            }
+            
         }
     }
     

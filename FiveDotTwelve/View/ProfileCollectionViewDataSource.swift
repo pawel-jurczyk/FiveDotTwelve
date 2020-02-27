@@ -12,15 +12,17 @@ class ProfileCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     var profile: Profile?
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        guard profile != nil else { return 0 }
         return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let profile = profile else { return 0 }
         switch section {
         case 0, 1:
             return 1
         case 2:
-            return profile?.photosURLs.count ?? 0
+            return profile.photosURLs.count
         default:
             return 0
         }
@@ -51,5 +53,22 @@ class ProfileCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         default:
             return UICollectionViewCell()
         }
+    }
+}
+
+extension ProfileCollectionViewDataSource: UICollectionViewDataSourcePrefetching {
+    
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        let requests: [URLRequest] = indexPaths
+            .filter { $0.section == 2 }
+            .compactMap {
+                guard let url = profile?.photosURLs[$0.row] else { return nil }
+                return URLRequest(url: url)
+        }
+        UIImageView.af.sharedImageDownloader.download(requests)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
+        
     }
 }

@@ -10,5 +10,5 @@ import Foundation
 
 enum ProfileError: Error {
     case parsingError
-    case networkError(error: Error)
+    case networkError
 }

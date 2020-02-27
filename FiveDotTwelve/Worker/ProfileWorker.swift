@@ -22,8 +22,8 @@ final class ProfileWorker {
     }
     
     private func handleUserProfileCompletion(data: Data?, response: URLResponse?, error: Error?) {
-        if let error = error {
-            complete(with: .networkError(error: error))
+        guard error == nil else  {
+            complete(with: .networkError)
             return
         }
         guard let data = data,

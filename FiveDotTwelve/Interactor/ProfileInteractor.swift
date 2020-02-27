@@ -10,6 +10,7 @@ import UIKit
 
 protocol ProfileInteractorProtocol {
     func viewDidLoad()
+    func refresh()
 }
 protocol ProfileDataStore {
     var profile: Profile? { get }
@@ -26,16 +27,22 @@ final class ProfileInteractor: ProfileDataStore {
 }
 
 extension ProfileInteractor: ProfileInteractorProtocol {
-    @objc func viewDidLoad() {
+    @objc func refresh() {
+        worker.downloadUserProfile(completion: processUserProfileCompletion(result:))
+    }
+    
+    func viewDidLoad() {
         presenter?.didStartNetworkRequest()
-        worker.downloadUserProfile { [weak self] result in
-            switch result {
-            case .success(let profile):
-                self?.profile = profile
-                self?.presenter?.presentUserProfile(profile)
-            case .failure(let error):
-                self?.presenter?.presentError(error)
-            }
+        worker.downloadUserProfile(completion: processUserProfileCompletion(result:))
+    }
+    
+    private func processUserProfileCompletion(result: Result<Profile, ProfileError>) {
+        switch result {
+        case .success(let profile):
+            self.profile = profile
+            presenter?.presentUserProfile(profile)
+        case .failure(let error):
+            presenter?.presentError(error)
         }
     }
 }

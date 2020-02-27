@@ -12,6 +12,7 @@ protocol ProfileViewControllerProtocol: AnyObject {
     func presentUserProfile(_ profile: Profile)
     func showLoader()
     func hideLoader()
+    func showError(message: String)
 }
 
 final class ProfileViewController: UIViewController {
@@ -48,21 +49,25 @@ final class ProfileViewController: UIViewController {
     
     private func configureCollectionView() {
         collectionView.dataSource = dataSource
+        collectionView.prefetchDataSource = dataSource
         collectionView.delegate = self
         collectionView.refreshControl = UIRefreshControl()
-        collectionView.refreshControl?.addTarget(interactor, action: #selector(ProfileInteractor.viewDidLoad), for: .valueChanged)
+        collectionView.refreshControl?.addTarget(interactor, action: #selector(ProfileInteractor.refresh), for: .valueChanged)
+        collectionView.collectionViewLayout = flowLayout()
+        collectionView.insetsLayoutMarginsFromSafeArea = false
+    }
+    
+    private func flowLayout() -> UICollectionViewFlowLayout {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
         flowLayout.sectionInset = .zero
-        collectionView.collectionViewLayout = flowLayout
-        collectionView.insetsLayoutMarginsFromSafeArea = false
+        return flowLayout
     }
 }
 
 extension ProfileViewController: ProfileViewControllerProtocol {
     func presentUserProfile(_ profile: Profile) {
-        collectionView.refreshControl?.endRefreshing()
         dataSource.profile = profile
         collectionView.reloadData()
     }
@@ -73,6 +78,13 @@ extension ProfileViewController: ProfileViewControllerProtocol {
     
     func hideLoader() {
         activityIndicator.stopAnimating()
+        collectionView.refreshControl?.endRefreshing()
+    }
+    
+    func showError(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 
