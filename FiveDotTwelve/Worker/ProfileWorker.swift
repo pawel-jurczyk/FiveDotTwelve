@@ -8,13 +8,19 @@
 
 import UIKit
 
+protocol ProfileWorkerProtocol {
+    func downloadUserProfile(completion: @escaping ((Result<Profile, ProfileError>) -> Void))
+}
+
 final class ProfileWorker {
     private struct Constants {
         static let url = URL(string: "https://fivedottwelve.com/FDT_iOS_rekrutacja_data.json")!
     }
     private let session = URLSession(configuration: .default)
-    var completion: ((Result<Profile, ProfileError>) -> Void)?
-    
+    private var completion: ((Result<Profile, ProfileError>) -> Void)?
+}
+
+extension ProfileWorker: ProfileWorkerProtocol {
     func downloadUserProfile(completion: @escaping ((Result<Profile, ProfileError>) -> Void)) {
         self.completion = completion
         let task = session.dataTask(with: Constants.url, completionHandler: handleUserProfileCompletion)

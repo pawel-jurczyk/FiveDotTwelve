@@ -18,11 +18,13 @@ protocol ProfileDataStore {
 
 final class ProfileInteractor: ProfileDataStore {
     private var presenter: ProfilePresenterProtocol?
-    private let worker = ProfileWorker()
+    private let worker: ProfileWorkerProtocol
     var profile: Profile?
     
-    init(presenter: ProfilePresenterProtocol) {
+    init(presenter: ProfilePresenterProtocol,
+         worker: ProfileWorkerProtocol = ProfileWorker()) {
         self.presenter = presenter
+        self.worker = worker
     }
 }
 

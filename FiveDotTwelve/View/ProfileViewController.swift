@@ -24,6 +24,11 @@ final class ProfileViewController: UIViewController {
             configureCollectionView()
         }
     }
+    @IBOutlet var titleLabel: UILabel! {
+        didSet {
+            titleLabel.attributedText = "PHOBOS".attributedString(withKern: 0.55, color: .white)
+        }
+    }
     let dataSource = ProfileCollectionViewDataSource()
     
     override func viewDidLoad() {

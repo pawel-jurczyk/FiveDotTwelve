@@ -38,7 +38,6 @@ extension ProfilePresenter: ProfilePresenterProtocol {
             case .networkError:
                 self.viewController?.showError(message: "Network error, please check your connection")
             }
-            
         }
     }
     

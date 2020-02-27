@@ -14,7 +14,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
             imageView.contentMode = .scaleAspectFill
         }
     }
-    
     var imageURL: URL? {
         didSet {
             guard let imageURL = imageURL else { return }

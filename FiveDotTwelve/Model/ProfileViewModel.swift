@@ -19,12 +19,12 @@ struct ProfileViewModel {
     
     init(profile: Profile) {
         self.name = profile.name.trimmingCharacters(in: [" "])
-        var titleComponents = profile.title.components(separatedBy: " ")
+        var titleComponents = profile.title.components(separatedBy: ", ")
         let toRemove = titleComponents.count - 2
         if toRemove > 0 {
             titleComponents.removeLast(toRemove)
         }
-        self.title = titleComponents.joined(separator: "\n")
+        self.title = titleComponents.joined(separator: ",\n")
         self.postsCount = "\(ProfileViewModel.formattedCount(profile.postsCount))"
         self.followersCount = "\(ProfileViewModel.formattedCount(profile.followersCount))"
         self.photosURLs = profile.photosURLs
@@ -39,8 +39,7 @@ struct ProfileViewModel {
             return "\(count / 1_000_000)m"
         } else if count > 999 {
             return "\(count / 1_000)k"
-        } else {
-            return "\(count)"
         }
+        return "\(count)"
     }
 }

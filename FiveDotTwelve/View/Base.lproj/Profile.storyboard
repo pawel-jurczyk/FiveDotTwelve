@@ -29,21 +29,50 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-Cl-70L">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger" translatesAutoresizingMaskIntoConstraints="NO" id="zDX-iO-5XC">
+                                <rect key="frame" x="16" y="60" width="22" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="2TL-8Z-7hL"/>
+                                    <constraint firstAttribute="width" constant="22" id="EfJ-5U-ptY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOBOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkk-aP-NN3">
+                                <rect key="frame" x="171" y="60" width="72" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Lkr-J8-W2k">
+                                <rect key="frame" x="376" y="60" width="22" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="O1q-dS-QLj"/>
+                                    <constraint firstAttribute="width" constant="22" id="esG-Qx-by7"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ho8-a0-2Mg" firstAttribute="top" secondItem="Nxn-Sw-ZyI" secondAttribute="top" constant="-2" id="0L9-LM-HDb"/>
+                            <constraint firstAttribute="trailing" secondItem="Lkr-J8-W2k" secondAttribute="trailing" constant="16" id="4jg-cR-gJn"/>
+                            <constraint firstItem="Lkr-J8-W2k" firstAttribute="top" secondItem="9T9-rw-Ekc" secondAttribute="top" constant="16" id="5ov-iP-Brz"/>
                             <constraint firstItem="BNb-Cl-70L" firstAttribute="centerY" secondItem="Nxn-Sw-ZyI" secondAttribute="centerY" id="AMH-Nk-3Ox"/>
                             <constraint firstAttribute="bottom" secondItem="ho8-a0-2Mg" secondAttribute="bottom" id="MZv-b0-mhw"/>
+                            <constraint firstItem="zDX-iO-5XC" firstAttribute="top" secondItem="9T9-rw-Ekc" secondAttribute="top" constant="16" id="Rix-c5-QV1"/>
                             <constraint firstItem="ho8-a0-2Mg" firstAttribute="trailing" secondItem="9T9-rw-Ekc" secondAttribute="trailing" id="YJ0-8A-cfO"/>
+                            <constraint firstItem="Rkk-aP-NN3" firstAttribute="top" secondItem="9T9-rw-Ekc" secondAttribute="top" constant="16" id="aK0-iP-45O"/>
                             <constraint firstItem="BNb-Cl-70L" firstAttribute="centerX" secondItem="9T9-rw-Ekc" secondAttribute="centerX" id="fGL-e1-c3e"/>
+                            <constraint firstItem="Rkk-aP-NN3" firstAttribute="centerX" secondItem="Nxn-Sw-ZyI" secondAttribute="centerX" id="fOS-QO-oU9"/>
                             <constraint firstItem="ho8-a0-2Mg" firstAttribute="leading" secondItem="9T9-rw-Ekc" secondAttribute="leading" id="h5y-a8-g8v"/>
+                            <constraint firstItem="zDX-iO-5XC" firstAttribute="leading" secondItem="9T9-rw-Ekc" secondAttribute="leading" constant="16" id="vmy-DN-GCt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9T9-rw-Ekc"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="BNb-Cl-70L" id="ebA-Db-GD2"/>
                         <outlet property="collectionView" destination="ho8-a0-2Mg" id="a39-fo-1gQ"/>
+                        <outlet property="titleLabel" destination="Rkk-aP-NN3" id="RnA-F8-0VA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNW-e5-sYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -51,4 +80,8 @@
             <point key="canvasLocation" x="165.21739130434784" y="-286.60714285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hamburger" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+    </resources>
 </document>

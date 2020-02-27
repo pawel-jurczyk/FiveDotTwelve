@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C484DC1F5C7B34026E98CDF /* Pods_FiveDotTwelve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCCA0C81BA79C13E92A13E8 /* Pods_FiveDotTwelve.framework */; };
+		E27FB0B1C344848F2F4D2FEB /* Pods_FiveDotTwelveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EEE2CD3ED05DA0687CA6C4 /* Pods_FiveDotTwelveTests.framework */; };
 		E50B73A924080EE5008F1215 /* ProfileViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B73A824080EE5008F1215 /* ProfileViewModelSpec.swift */; };
 		E5A7A2AD24058D220090A41C /* ProfileCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2AC24058D220090A41C /* ProfileCollectionViewDataSource.swift */; };
 		E5A7A2AF24058DD20090A41C /* SegmentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2AE24058DD20090A41C /* SegmentsCollectionViewCell.swift */; };
@@ -18,14 +20,14 @@
 		E5A7A2C22406DF9F0090A41C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2C12406DF9F0090A41C /* Color.swift */; };
 		E5A7A2C42406E6600090A41C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2C32406E6600090A41C /* ProfileViewModel.swift */; };
 		E5A7A2C62406F3C90090A41C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A2C52406F3C90090A41C /* String+Extension.swift */; };
+		E5DA1F4824082FEB00A1BE6E /* ProfileResponseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA1F4724082FEB00A1BE6E /* ProfileResponseSpec.swift */; };
+		E5DA1F4A2408392100A1BE6E /* ProfileInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA1F492408392100A1BE6E /* ProfileInteractorSpec.swift */; };
 		E5EA64F7240573E700BA7D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA64F6240573E700BA7D25 /* AppDelegate.swift */; };
 		E5EA64F9240573E700BA7D25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA64F8240573E700BA7D25 /* SceneDelegate.swift */; };
 		E5EA64FE240573E700BA7D25 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA64FC240573E700BA7D25 /* Profile.storyboard */; };
 		E5EA6500240573EA00BA7D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EA64FF240573EA00BA7D25 /* Assets.xcassets */; };
 		E5EA6503240573EA00BA7D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA6501240573EA00BA7D25 /* LaunchScreen.storyboard */; };
-		E5EA650E240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift */; };
-		E5EA651D2405750A00BA7D25 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E5EA651C2405750A00BA7D25 /* Quick */; };
-		E5EA652A2405766800BA7D25 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E5EA65292405766800BA7D25 /* Nimble */; };
+		E5EA650E240573EA00BA7D25 /* ProfileCollectionViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceSpec.swift */; };
 		E5EA652C24057B1500BA7D25 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA652B24057B1500BA7D25 /* Profile.swift */; };
 		E5EA652E24057B2800BA7D25 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA652D24057B2800BA7D25 /* ProfileResponse.swift */; };
 		E5EA653624057BA800BA7D25 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA653024057BA800BA7D25 /* ProfilePresenter.swift */; };
@@ -48,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14EEE2CD3ED05DA0687CA6C4 /* Pods_FiveDotTwelveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveDotTwelveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EBCEA0BE8B97F87FDF269EA /* Pods-FiveDotTwelve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDotTwelve.release.xcconfig"; path = "Target Support Files/Pods-FiveDotTwelve/Pods-FiveDotTwelve.release.xcconfig"; sourceTree = "<group>"; };
+		647BA6CF0286B0CB47116F06 /* Pods-FiveDotTwelveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDotTwelveTests.release.xcconfig"; path = "Target Support Files/Pods-FiveDotTwelveTests/Pods-FiveDotTwelveTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CCCA0C81BA79C13E92A13E8 /* Pods_FiveDotTwelve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveDotTwelve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F090964EE721ED6D88183A6 /* Pods-FiveDotTwelveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDotTwelveTests.debug.xcconfig"; path = "Target Support Files/Pods-FiveDotTwelveTests/Pods-FiveDotTwelveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2BEA2867A1BE6D3C65015EA /* Pods-FiveDotTwelve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveDotTwelve.debug.xcconfig"; path = "Target Support Files/Pods-FiveDotTwelve/Pods-FiveDotTwelve.debug.xcconfig"; sourceTree = "<group>"; };
 		E50B73A824080EE5008F1215 /* ProfileViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelSpec.swift; sourceTree = "<group>"; };
 		E5A7A2AC24058D220090A41C /* ProfileCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		E5A7A2AE24058DD20090A41C /* SegmentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -59,6 +67,8 @@
 		E5A7A2C12406DF9F0090A41C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E5A7A2C32406E6600090A41C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		E5A7A2C52406F3C90090A41C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E5DA1F4724082FEB00A1BE6E /* ProfileResponseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponseSpec.swift; sourceTree = "<group>"; };
+		E5DA1F492408392100A1BE6E /* ProfileInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractorSpec.swift; sourceTree = "<group>"; };
 		E5EA64F3240573E700BA7D25 /* FiveDotTwelve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveDotTwelve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA64F6240573E700BA7D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA64F8240573E700BA7D25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +77,7 @@
 		E5EA6502240573EA00BA7D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5EA6504240573EA00BA7D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EA6509240573EA00BA7D25 /* FiveDotTwelveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveDotTwelveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewDataSourceTests.swift; sourceTree = "<group>"; };
+		E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewDataSourceSpec.swift; sourceTree = "<group>"; };
 		E5EA650F240573EA00BA7D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EA652B24057B1500BA7D25 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E5EA652D24057B2800BA7D25 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
@@ -85,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EA654724057FBA00BA7D25 /* AlamofireImage in Frameworks */,
+				6C484DC1F5C7B34026E98CDF /* Pods_FiveDotTwelve.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,14 +103,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5EA651D2405750A00BA7D25 /* Quick in Frameworks */,
-				E5EA652A2405766800BA7D25 /* Nimble in Frameworks */,
+				E27FB0B1C344848F2F4D2FEB /* Pods_FiveDotTwelveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A07F0363EEBF0414D7865C11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2BEA2867A1BE6D3C65015EA /* Pods-FiveDotTwelve.debug.xcconfig */,
+				1EBCEA0BE8B97F87FDF269EA /* Pods-FiveDotTwelve.release.xcconfig */,
+				8F090964EE721ED6D88183A6 /* Pods-FiveDotTwelveTests.debug.xcconfig */,
+				647BA6CF0286B0CB47116F06 /* Pods-FiveDotTwelveTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E50B73A624080837008F1215 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +150,7 @@
 				E5EA650C240573EA00BA7D25 /* FiveDotTwelveTests */,
 				E5EA64F4240573E700BA7D25 /* Products */,
 				E5EA651E2405756200BA7D25 /* Frameworks */,
+				A07F0363EEBF0414D7865C11 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,7 +168,6 @@
 			children = (
 				E5EA64F6240573E700BA7D25 /* AppDelegate.swift */,
 				E5EA64F8240573E700BA7D25 /* SceneDelegate.swift */,
-				E5EA64FC240573E700BA7D25 /* Profile.storyboard */,
 				E5EA64FF240573EA00BA7D25 /* Assets.xcassets */,
 				E5EA6501240573EA00BA7D25 /* LaunchScreen.storyboard */,
 				E5EA6504240573EA00BA7D25 /* Info.plist */,
@@ -164,8 +185,10 @@
 		E5EA650C240573EA00BA7D25 /* FiveDotTwelveTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift */,
+				E5EA650D240573EA00BA7D25 /* ProfileCollectionViewDataSourceSpec.swift */,
+				E5DA1F492408392100A1BE6E /* ProfileInteractorSpec.swift */,
 				E50B73A824080EE5008F1215 /* ProfileViewModelSpec.swift */,
+				E5DA1F4724082FEB00A1BE6E /* ProfileResponseSpec.swift */,
 				E5EA650F240573EA00BA7D25 /* Info.plist */,
 			);
 			path = FiveDotTwelveTests;
@@ -174,6 +197,8 @@
 		E5EA651E2405756200BA7D25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CCCA0C81BA79C13E92A13E8 /* Pods_FiveDotTwelve.framework */,
+				14EEE2CD3ED05DA0687CA6C4 /* Pods_FiveDotTwelveTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,6 +222,7 @@
 		E5EA654024057ED400BA7D25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E5EA64FC240573E700BA7D25 /* Profile.storyboard */,
 				E5EA653B24057BCF00BA7D25 /* ProfileViewController.swift */,
 				E5A7A2AC24058D220090A41C /* ProfileCollectionViewDataSource.swift */,
 				E50B73A724080E00008F1215 /* CollectionViewCells */,
@@ -238,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5EA6512240573EA00BA7D25 /* Build configuration list for PBXNativeTarget "FiveDotTwelve" */;
 			buildPhases = (
+				CA692926E2A161DC96182B9B /* [CP] Check Pods Manifest.lock */,
 				E5EA64EF240573E700BA7D25 /* Sources */,
 				E5EA64F0240573E700BA7D25 /* Frameworks */,
 				E5EA64F1240573E700BA7D25 /* Resources */,
@@ -258,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5EA6515240573EA00BA7D25 /* Build configuration list for PBXNativeTarget "FiveDotTwelveTests" */;
 			buildPhases = (
+				B2DC405E7C25C745B100932C /* [CP] Check Pods Manifest.lock */,
 				E5EA6505240573EA00BA7D25 /* Sources */,
 				E5EA6506240573EA00BA7D25 /* Frameworks */,
 				E5EA6507240573EA00BA7D25 /* Resources */,
+				8BF8479E0C7134FBFEE1A0C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,10 +297,6 @@
 				E5EA650B240573EA00BA7D25 /* PBXTargetDependency */,
 			);
 			name = FiveDotTwelveTests;
-			packageProductDependencies = (
-				E5EA651C2405750A00BA7D25 /* Quick */,
-				E5EA65292405766800BA7D25 /* Nimble */,
-			);
 			productName = FiveDotTwelveTests;
 			productReference = E5EA6509240573EA00BA7D25 /* FiveDotTwelveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -305,8 +330,6 @@
 			);
 			mainGroup = E5EA64EA240573E700BA7D25;
 			packageReferences = (
-				E5EA6518240574EA00BA7D25 /* XCRemoteSwiftPackageReference "Nimble" */,
-				E5EA651B2405750A00BA7D25 /* XCRemoteSwiftPackageReference "Quick" */,
 				E5EA654524057FBA00BA7D25 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = E5EA64F4240573E700BA7D25 /* Products */;
@@ -342,6 +365,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BF8479E0C7134FBFEE1A0C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiveDotTwelveTests/Pods-FiveDotTwelveTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiveDotTwelveTests/Pods-FiveDotTwelveTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FiveDotTwelveTests/Pods-FiveDotTwelveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2DC405E7C25C745B100932C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiveDotTwelveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA692926E2A161DC96182B9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiveDotTwelve-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5EA64EF240573E700BA7D25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -372,7 +459,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E50B73A924080EE5008F1215 /* ProfileViewModelSpec.swift in Sources */,
-				E5EA650E240573EA00BA7D25 /* ProfileCollectionViewDataSourceTests.swift in Sources */,
+				E5DA1F4A2408392100A1BE6E /* ProfileInteractorSpec.swift in Sources */,
+				E5EA650E240573EA00BA7D25 /* ProfileCollectionViewDataSourceSpec.swift in Sources */,
+				E5DA1F4824082FEB00A1BE6E /* ProfileResponseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +613,7 @@
 		};
 		E5EA6513240573EA00BA7D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BEA2867A1BE6D3C65015EA /* Pods-FiveDotTwelve.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +632,7 @@
 		};
 		E5EA6514240573EA00BA7D25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EBCEA0BE8B97F87FDF269EA /* Pods-FiveDotTwelve.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +651,7 @@
 		};
 		E5EA6516240573EA00BA7D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F090964EE721ED6D88183A6 /* Pods-FiveDotTwelveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +674,7 @@
 		};
 		E5EA6517240573EA00BA7D25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647BA6CF0286B0CB47116F06 /* Pods-FiveDotTwelveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -635,22 +728,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E5EA6518240574EA00BA7D25 /* XCRemoteSwiftPackageReference "Nimble" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Nimble";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.5;
-			};
-		};
-		E5EA651B2405750A00BA7D25 /* XCRemoteSwiftPackageReference "Quick" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Quick";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.0;
-			};
-		};
 		E5EA654524057FBA00BA7D25 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
@@ -662,16 +739,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E5EA651C2405750A00BA7D25 /* Quick */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E5EA651B2405750A00BA7D25 /* XCRemoteSwiftPackageReference "Quick" */;
-			productName = Quick;
-		};
-		E5EA65292405766800BA7D25 /* Nimble */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E5EA6518240574EA00BA7D25 /* XCRemoteSwiftPackageReference "Nimble" */;
-			productName = Nimble;
-		};
 		E5EA654624057FBA00BA7D25 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E5EA654524057FBA00BA7D25 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
